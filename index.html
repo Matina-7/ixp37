@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siamese Cat Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ui">
+    <div id="topbar">
+        <div id="hud">
+            Coins: <span id="coinCount">0</span>/10
+            <span id="hint"> | Controls: W = Jump / A = Left / D = Right</span>
+        </div>
+        <div id="timer">90.0s</div>
+    </div>
+
+    <div id="message"></div>
+
+    <div id="itemPanel">
+        <span>Selected Item:</span>
+        <span id="itemStatus">None</span>
+    </div>
+</div>
+
+<canvas id="gameCanvas" width="1200" height="500"></canvas>
+
+<!-- Narrative Dialog -->
+<div id="dialogOverlay" class="hidden">
+    <div id="dialogBox">
+        <div id="dialogText">You found something interesting!</div>
+        <div id="dialogChoices"></div>
+        <div id="dialogHint">Choose an item to continue.</div>
+        <button id="dialogClose">Close</button>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
