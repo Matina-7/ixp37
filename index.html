@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Siamese Sprint — Narrative Interaction Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="topbar">
+      <div id="hud">
+        <span id="coins">Coins: 0/10</span>
+        <span id="hint">Controls: W = Jump, A = Left, D = Right, Shift = Dash (only if Sprint used)</span>
+      </div>
+      <div id="timer">Time: 01:30</div>
+    </div>
+
+    <div id="itemPanel">
+      <label>Item:</label>
+      <select id="itemSelect">
+        <option value="none">None</option>
+        <option value="sprint">Sprint (enable dash for 5s)</option>
+        <option value="magnet">Magnet (attract coins for 5s)</option>
+      </select>
+      <button id="useItem">Use Item</button>
+      <span id="itemStatus">No active item</span>
+    </div>
+
+    <div id="message"></div>
+  </div>
+
+  <canvas id="gameCanvas" width="1200" height="480"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
