@@ -36,7 +36,7 @@ let cat = {
     vy: 0,
     onGround: false,
     jumpCount: 0,
-    speed: 4,
+    speed: 3,
     sprint: false,
     sprintBoost: false
 };
